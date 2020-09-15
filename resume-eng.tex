@@ -1,0 +1,296 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Vadim}{Mishenev}
+%\address{11.11.1995}
+%\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
+%\address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+
+\mobile{(+7) 921-558-67-92}
+\email{vad-mishenev@yandex.ru}
+% \homepage{www.posquit0.com}
+\github{vmishenev}
+% \linkedin{posquit0}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+\googlescholar{mAn5yssAAAAJ}{Vadim Mishenev
+}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+%\quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Mishenev Vadim~~~·~~~Résumé}
+  %{Byungjin Park~~~·~~~Résumé}
+  {\thepage}
+
+
+\cvsection{Résumé}
+
+\begin{cvparagraph}
+
+I like learning new technologies and methods. While studying at the university, I was engaged in research activities, studing of scientific papers.
+In the future, I would like to design and implement of highly loaded, reliable systems, so I have studied C/C++, Java, parallel programming, etc.
+\end{cvparagraph}
+
+
+
+
+\cvsection{Education}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+    {B. S. in Fundamental Computer Science and information technology} % Degree
+    {Samara State University} % Institution
+    {Samara, Russia} % Location
+    {2014 - 2018} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {With honor. Average score: 5.0}
+      \end{cvitems}
+    }
+    \cventry
+    {M. S. in Software and Administration of Information Systems, Department: mathematics and mechanics} % Degree
+    {Saint Petersburg State University} % Institution
+    {Saint-Petersburg, Russia} % Location
+    {2018 - 2020} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {Average score: 4.9}
+      \end{cvitems}
+    }
+        \cventry
+    {Software Development} % Degree
+    {Computer Science Center} % Institution
+    {Saint-Petersburg, Russia} % Location
+    {2018 - 2021} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+      \item \href{https://compscicenter.ru/}{CS center} is a joint initiative of JetBrains, Computer Science Club, and The
+Yandex School of Data Analysis. 
+        \item {\href{https://my.compscicenter.ru/users/4744/}{Profile}}
+      \end{cvitems}
+    }
+    
+
+%---------------------------------------------------------
+\end{cventries}
+
+
+\cvsection{Internships}
+\begin{cventries}
+
+  \cventry
+    {Researcher} % Job title
+    {JetBrains Research} % Organization
+    {Saint-Petersburg, Russia} % Location
+    {Jul 2018 - Aug 2019} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {I researched in the field of program synthesis and developed a C ++ synthesis tool as a module of \href{https://github.com/Z3Prover/z3}{Z3}}
+      \end{cvitems}
+    }
+
+
+\end{cventries}
+
+\cvsection{Programming languages}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {С/C++ 11, 14, 17} % Role
+    {C++} % Event
+    {} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s)
+        \item {One year of learning at Computer Science Center with "excellent" grade}
+        \item {Implementation  of the function synthesis module for the SMT-solver Z3 (\href{https://bitbucket.org/vad-mishenev/misynth/src/master/}{link})}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Java Core} % Role
+    {Java} % Event
+    {} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s)
+        \item {One year of learning at the training center NetCracker (Samare 2016-2017) }
+        \item {Implementation of different  applications during a study (android-applications)}
+      \end{cvitems}
+    }
+  \cventry
+    {Adobe Flash} % Role
+    {ActionScript 3.0} % Event
+    {} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s)
+        \item {Freelance (half-year) in development a flash-application (flash, php, mysql) for New Media}
+      \end{cvitems}
+    }
+%---------------------------------------------------------
+\end{cventries}
+
+\cvsection{Papers}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Proceedings of the International Symposium «Reliability and Quality»} % Role
+    {Использование волнового алгоритма для построения скелета растрового изображения} % Title
+    { } % Location
+    {2017} % Date(s)
+    {
+      \begin{cvitems} % Description(s)
+       % \item {}
+      \end{cvitems}
+    }
+  \cventry
+    {Conference ITNT-2018} % Role
+    {Алгоритм волновой скелетизации растровых изображений} % Title
+    { } % Location
+    {2018} % Date(s)
+    {
+\begin{cvitems} % Description(s)
+        %\item {}
+      \end{cvitems}
+    }
+    
+      \cventry
+    {CEUR \textit{(Scopus)}} % Role
+    {Wave skeletonization algorithm for raster images} % Title
+    { } % Location
+    {2018} % Date(s)
+    {
+      \begin{cvitems} % Description(s)
+        %\item {}
+      \end{cvitems}
+    }
+    
+    
+    \cventry
+    {} % Role
+    {Many-Invocation Functional Synthesis} % Title
+    { } % Location
+    {planning} % Date(s)
+    {
+      \begin{cvitems} % Description(s)
+       % \item {}
+      \end{cvitems}
+    }
+%---------------------------------------------------------
+\end{cventries}
+\cvsection{Skills}
+
+\cvsubsection{Professional}
+
+  \begin{cvparagraph}
+Git, Linux, Algorithms and data structures, network programming (TCP / IP, HTTP, Sockets, etc.), parallel programming, web development (during my study dealt with HTML, CSS, XML / JSON, Angular) , a database (MySql, Oracle), familiar with Python.
+
+\end{cvparagraph}
+
+\cvsubsection{Languages}
+
+\begin{cvparagraph}
+
+  \begin{cvitems} % Description(s) bullet points
+        \item {
+        English (B1 -- Intermediate)}
+        \item {German (A1, two years of university studies)}
+      \end{cvitems}
+      
+\end{cvparagraph}
+
+
+
+%-------------------------------------------------------------------------------
+\end{document}
